@@ -57,6 +57,12 @@ body {
 .socials i {
   padding: 0.4rem;
   font-size: 2rem;
+  cursor: pointer;
+  transition: color .2s, transform .5s;
+}
+.socials i:hover{
+  color: darkblue;
+  transform: translateY(-.5rem);
 }
 
 .projectdiv {
