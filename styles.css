@@ -1,0 +1,167 @@
+body {
+  width: 100vw;
+  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.firstdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  position: relative;
+  height: 80vh;
+}
+.firstdiv img {
+  height: 100%;
+  width: 140%;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: -1px -1px 18px -2px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: -1px -1px 18px -2px rgba(0, 0, 0, 0.73);
+}
+
+.firstdiv h1 {
+  font-size: 4rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.firstdiv p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.innerdiv {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  margin: 11rem 0;
+  box-shadow: -1px -1px 18px -2px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: -1px -1px 18px -2px rgba(0, 0, 0, 0.23);
+  position: relative;
+}
+
+.socials {
+  display: flex;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.socials i {
+  padding: 0.4rem;
+  font-size: 2rem;
+}
+
+.projectdiv {
+  margin: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+}
+
+
+.projectcard {
+  background-color: white;
+  width: 100%;
+  box-shadow: -1px -1px 18px -2px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: -1px -1px 18px -2px rgba(0, 0, 0, 0.23);
+  height: 30rem;
+  margin: auto;
+  padding: 0;
+}
+.projectcard img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.projectcard h3 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.projectcard p {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.header-card {
+  display: flex;
+  position: relative;
+}
+.header-card i {
+  font-size: 2rem;
+  position: absolute;
+  margin: 1rem;
+  right: 0%;
+}
+
+footer {
+  height: 20vh;
+  background-color: wheat;
+}
+
+#myprojects {
+  font-size: 3.2rem;
+  margin: 0 3.2rem;
+}
+
+@media (max-width: 480px) {
+  .projectdiv {
+    margin: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .firstdiv {
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+  .innerdiv {
+    height: auto;
+    margin: 0;
+  }
+  .firstdiv img {
+    height: 60vh;
+    width: 100%;
+  }
+  .projectcard {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+    .firstdiv {
+        /* flex-direction: column; */
+        display: block;
+        margin: 0;
+        margin-bottom: 2rem;
+        height: auto;
+        position: relative;
+      }
+    .firstdiv img {
+        height: 40vh;
+        width: 50%;
+        position: relative;
+        float: left;
+        z-index: 2;
+        margin: 0 2rem;
+      }
+    
+      .innerdiv{
+        display: block;
+        margin: 3rem;
+      }
+    .projectdiv {
+      margin: 3rem;
+      gap: 3rem;
+      grid-template-columns: 1fr;
+  
+    }
+  }
